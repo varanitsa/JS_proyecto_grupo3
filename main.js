@@ -16,6 +16,9 @@ function getCheckedBox() {
   console.log(checkedBox);
 }
 
-
+$(".selectall").click(function(){
+  $(".participante").prop("checked",$(this).prop("checked"));
+  });
+  
 
 });
