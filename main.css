@@ -1,3 +1,10 @@
+
+* {
+font-family: 'Mochiy Pop P One', sans-serif;
+color:darkblue;
+}
+
+
 body h1,
 h2 {
     text-align: center;
@@ -15,7 +22,11 @@ main {
     padding: 20px;
     border-radius: 10px;
     box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
-    font-size: 18px;
+    font-size: 0.8rem;
+    }
+
+.lista-participantes.selectall {
+    padding-left:25%;
 }
 
 #start {
