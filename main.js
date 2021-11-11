@@ -45,12 +45,15 @@ $(document).ready(function() {
             "Kristina"
         ];
 
-        $("#start").click(function() {
-            let winner = student[Math.floor(Math.random() * student.length)];
+        $("#start").on ('click',function() {
+            function chooseRandom (){
+
+            let randomPick = Math.floor(Math.random() * student.length)];
             console.log(winner)
 
+
             for (i=0; i&lt;Total; i++) {
-                student = Math.floor(Math.random()*(listado.length));
+                student = Math.floor(Math.random()*(student.length));
                 seleccion = participante[aleatorio];
                 trace(seleccion);
                 listado.splice(aleatorio, 1);
