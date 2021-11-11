@@ -25,13 +25,18 @@ main {
 	
 }
 .card {
-    width: 280px;
+    width: 250px;
     height: 580px;
     background-color: #A9D0F5;
-    padding: 20px;
+    padding: 15px;
     border-radius: 10px;
     box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
     font-size: 0.8rem;
+    }
+
+    #participantes {
+        list-style: none;
+        line-height: 1.9;
     }
 
 .lista-participantes.selectall {
