@@ -48,16 +48,14 @@ $(document).ready(function() {
         $("#start").click(function() {
             let winner = student[Math.floor(Math.random() * student.length)];
             console.log(winner)
-<<<<<<< HEAD
+
             for (i=0; i&lt;Total; i++) {
                 student = Math.floor(Math.random()*(listado.length));
                 seleccion = participante[aleatorio];
                 trace(seleccion);
                 listado.splice(aleatorio, 1);
                 }
-=======
->>>>>>> e3fb30fdece528aec95786907fb2b73a96b33cc3
-        })
+
 
         $("#reset").click(function() {
 
