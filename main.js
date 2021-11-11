@@ -49,8 +49,8 @@ $(document).ready(function() {
             let winner = student[Math.floor(Math.random() * student.length)];
             console.log(winner)
             for (i=0; i&lt;Total; i++) {
-                aleatorio = Math.floor(Math.random()*(listado.length));
-                seleccion = listado[aleatorio];
+                student = Math.floor(Math.random()*(listado.length));
+                seleccion = participante[aleatorio];
                 trace(seleccion);
                 listado.splice(aleatorio, 1);
                 }
