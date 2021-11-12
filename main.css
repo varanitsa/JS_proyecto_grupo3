@@ -16,7 +16,7 @@ h2 {
 .container{
     font-family: 'Mochiy Pop P One', sans-serif;
     position: absolute;
-    margin-top: 40%;
+    margin-top: 20%;
     left: 50%;
     transform: translateY(-50%) translateX(-50%);
     width: fit-content;
@@ -48,7 +48,8 @@ h2 {
     #resto {
         list-style: none;
         line-height: 1.9;
-		column-count: 3;
+		column-count: 4;
+		column-width: auto;
 		}	
 	
 	#total {
