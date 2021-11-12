@@ -1,73 +1,75 @@
-$(document).ready(function() {
 
-    // $(document).on('click', 'input:checkbox', getCheckedBox, );
+const arr = ["Anna Girona",
+"Sonia",
+"Desiree",
+"Alisa",
+"Alexia",
+"Ana Casas",
+"Candy",
+"Yuliya",
+"Carmen",
+"Faby",
+"Gabrielle",
+"Gracia",
+"Helen",
+"Joana",
+"Judith",
+"Laura Campos",
+"Laura Conteras",
+"Marisa",
+"Rosa",
+"Sandra",
+"Sara",
+"Tamara",
+"Valentina",
+"Kristina"];
 
-    // getCheckedBox();
+let resto = ["Anna Girona",
+"Sonia",
+"Desiree",
+"Alisa",
+"Alexia",
+"Ana Casas",
+"Candy",
+"Yuliya",
+"Carmen",
+"Faby",
+"Gabrielle",
+"Gracia",
+"Helen",
+"Joana",
+"Judith",
+"Laura Campos",
+"Laura Conteras",
+"Marisa",
+"Rosa",
+"Sandra",
+"Sara",
+"Tamara",
+"Valentina",
+"Kristina"];
 
-    // function getCheckedBox() {
-
-    //     let checkedBox = $.map($('input:checkbox:checked'),
-    //         function(val, i) {
-    //             t
-    //             return val.value;
-    //         });
-    //     console.clear();
-    //     console.log(checkedBox);
-
-    //     $(".selectall").click(function() {
-    //         $(".participante").prop("checked", $(this).prop("checked"));
-    //     });
-
-        let student = [
-            "Anna Girona",
-            "Sonia",
-            "Desiree",
-            "Alisa",
-            "Alexia",
-            "Ana Casas",
-            "Candy",
-            "Yuliya",
-            "Carmen",
-            "Faby",
-            "Gabrielle",
-            "Gracia",
-            "Helen",
-            "Joana",
-            "Judith",
-            "Laura Campos",
-            "Laura Conteras",
-            "Marisa",
-            "Rosa",
-            "Sandra",
-            "Sara",
-            "Tamara",
-            "Valentina",
-            "Kristina"
-        ];
-
-        $("#start").on ('click',function() {
-            function chooseRandom (){
-
-            let randomPick = Math.floor(Math.random() * student.length)];
-            console.log(winner)
-
-
-            for (i=0; i&lt;Total; i++) {
-                student = Math.floor(Math.random()*(student.length));
-                seleccion = participante[aleatorio];
-                trace(seleccion);
-                listado.splice(aleatorio, 1);
-                }
-
-
-        $("#reset").click(function() {
-
-        })
-
-    }
-
-
-
-
+let number = 0;
+document.addEventListener("DOMContentLoaded", function() {
+document.getElementById("resto").innerHTML=arr.map((item, i)=>`<li id="${i}">${item}</li>`);
 
 });
+
+const randomNumber = () =>{
+if(resto.length>0){
+number = Math.floor(Math.random()*resto.length);
+
+document.getElementById("winner").innerHTML=resto[number];
+resto.splice(number, 1);
+document.getElementById("total").innerHTML=resto.map((item, i)=>`<li>${item}</li>`);
+}else{
+document.getElementById("winner").innerHTML="no hay";
+}
+}
+
+const resetEver = () =>{
+resto = [...arr];
+document.getElementById("winner").innerHTML="";
+document.getElementById("total").innerHTML=resto.map((item, i)=>`<li>${item}</li>`);
+
+}
