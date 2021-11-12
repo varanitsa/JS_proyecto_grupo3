@@ -17,6 +17,7 @@ h2 {
     font-family: 'Mochiy Pop P One', sans-serif;
     position: absolute;
     margin-top: 20%;
+	margin-bottom: 20%;
     left: 50%;
     transform: translateY(-50%) translateX(-50%);
     width: fit-content;
