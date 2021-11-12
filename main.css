@@ -5,7 +5,6 @@ color:darkblue;
 }
 
 body {
-	background: #4faff8;
 	background: -webkit-linear-gradient(top, #98d2ff 0%, rgb(217, 240, 255) 100%);
 	background: -linear-gradient(top, #c9dbe9 0%, #fff 100%);
 	background: -moz-linear-gradient(top, #c9dbe9 0%, #fff 100%);
@@ -15,48 +14,63 @@ body h1,
 h2 {
     text-align: center;
 }
-
-.backgroundclouds{
-	
-}
-.container {
-    width: 250px;
-    height: 580px;
-    background-color: #A9D0F5;
-    padding: 15px;
-    border-radius: 10px;
-    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
-    font-size: 0.8rem;
-    }
-
-    #participantes {
+.container{
+    font-family: 'Mochiy Pop P One', sans-serif;
+    position: absolute;
+    margin-top: 40%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    width: fit-content;
+    display: grid;
+    grid-template-columns: 1fr auto auto;
+    padding: 1rem;
+  }
+  li{
+    list-style: none;
+    margin:0;
+    padding: 0;
+  }
+  #cont{
+    margin: 1rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+	height: 180px;
+    width: 400px;
+    background-color: #F7F9F9;
+    box-shadow: 10px 10px 10px rgb(0,0,0,0.4);
+  }
+    #resto {
         list-style: none;
         line-height: 1.9;
-    }
+		column-count: 3;
+    }	
+	#total {
+		display: none;
+	}
+	button{
+		border-radius: 17px;
+		color: white;
+		background-color: #0e9bfa;
+		padding: 0.5rem 1rem;
+		cursor: pointer;
+		transition: 0.3s all;
+		font-size: 20px;
+		font-family: 'Mochiy Pop P One', sans-serif;
+	  }
+	  button:hover{
+		  background-color: #a3daff;
+		transform: scale(1.05);
+		color: #0e9bfa;
+		}
+		#result{
+			font-size: 40px;
+			padding: 1rem;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-around;
+		  }
 
-.lista-participantes.selectall {
-    padding-left:25%;
-}
-
-#start {
-    margin-top: 15px;
-    border-radius: 10px;
-    padding: 5px, 40px 5px 40px;
-    background-color: cornflowerblue;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-}
-
-#reset {
-    margin-top: 30px;
-    padding: 5px 20px;
-    border-radius: 10px;
-    background-color: cornflowerblue;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-}
 
 
 
