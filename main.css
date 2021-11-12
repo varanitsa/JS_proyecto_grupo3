@@ -32,6 +32,9 @@ h2 {
     margin:0;
     padding: 0;
   }
+  .bird-image {
+}
+
   #cont{
     margin: 1rem 0;
     display: flex;
