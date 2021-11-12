@@ -1,4 +1,3 @@
-
 const arr = ["Anna Girona",
 "Sonia",
 "Desiree",
