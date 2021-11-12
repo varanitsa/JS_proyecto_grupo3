@@ -1,13 +1,12 @@
 
 * {
 font-family: 'Mochiy Pop P One', sans-serif;
-color:darkblue;
-}
+color:darkblue; }
 
 body {
-	background: -webkit-linear-gradient(top, #98d2ff 0%, rgb(217, 240, 255) 100%);
-	background: -linear-gradient(top, #c9dbe9 0%, #fff 100%);
-	background: -moz-linear-gradient(top, #c9dbe9 0%, #fff 100%);
+background: -webkit-linear-gradient(top, #98d2ff 0%, rgb(217, 240, 255) 100%);
+background: -linear-gradient(top, #c9dbe9 0%, #fff 100%);
+background: -moz-linear-gradient(top, #c9dbe9 0%, #fff 100%);
 }
 
 body h1,
@@ -40,11 +39,18 @@ h2 {
     background-color: #F7F9F9;
     box-shadow: 10px 10px 10px rgb(0,0,0,0.4);
   }
+
+    .card {
+	display: flex;
+	border-radius: 10px;
+	padding: 40px;
+	}
     #resto {
         list-style: none;
         line-height: 1.9;
 		column-count: 3;
-    }	
+		}	
+	
 	#total {
 		display: none;
 	}
@@ -63,6 +69,7 @@ h2 {
 		transform: scale(1.05);
 		color: #0e9bfa;
 		}
+
 		#result{
 			font-size: 40px;
 			padding: 1rem;

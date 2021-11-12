@@ -63,7 +63,7 @@ document.getElementById("winner").innerHTML=resto[number];
 resto.splice(number, 1);
 document.getElementById("total").innerHTML=resto.map((item, i)=>`<li>${item}</li>`);
 }else{
-document.getElementById("winner").innerHTML="no hay";
+document.getElementById("winner").innerHTML="Game over";
 }
 }
 
