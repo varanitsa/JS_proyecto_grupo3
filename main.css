@@ -47,21 +47,23 @@ h2 {
 	display: flex;
 	border-radius: 10px;
 	padding: 40px;
+	background-color: blueviolet;
 	}
 
     #resto {
-		display: none;
+		
         list-style: none;
-        line-height: 1.9;
-		column-count: 4;
-		column-width: auto;
+        line-height: 3;
+		column-count: 8;
+		column-width: 20px;
 		}	
 	
 	#total {
+		display: none;
 		list-style: none;
 		line-height: 1.9;
-		column-count: 4;
-		column-width: auto;
+		column-count: 2;
+		column-width: 50px;
 		}
 	
 	button{
