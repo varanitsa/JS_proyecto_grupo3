@@ -62,13 +62,13 @@ document.getElementById("winner").innerHTML=resto[number];
 resto.splice(number, 1);
 document.getElementById("total").innerHTML=resto.map((item, i)=>`<li>${item}</li>`);
 }else{
-document.getElementById("winner").innerHTML="Game over";
+    resto = [...arr];
 }
 }
 
-const resetEver = () =>{
-resto = [...arr];
-document.getElementById("winner").innerHTML="";
-document.getElementById("total").innerHTML=resto.map((item, i)=>`<li>${item}</li>`);
+// const resetEver = () =>{
+// resto = [...arr];
+// document.getElementById("winner").innerHTML="";
+// document.getElementById("total").innerHTML=resto.map((item, i)=>`<li>${item}</li>`);
 
-}
+// }
