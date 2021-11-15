@@ -61,7 +61,6 @@ number = Math.floor(Math.random()*resto.length);
 document.getElementById("winner").innerHTML=resto[number];
 resto.splice(number, 1);
 document.getElementById("total").innerHTML=resto.map((item, i)=>`<li>${item}</li>`);
-document.write("<br>"}())
 }else{
     resto = [...arr];
 }
