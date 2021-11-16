@@ -1,5 +1,4 @@
 
-
 const arr = ["Anna Girona",
     "Sonia",
     "Desiree",
@@ -77,12 +76,12 @@ const randomNumber = () => {
     }
 }
 
-// const resetEver = () =>{
-// resto = [...arr];
-// document.getElementById("winner").innerHTML="";
-// document.getElementById("total").innerHTML=resto.map((item, i)=>`<li>${item}</li>`);
+const resetEver = () =>{
+resto = [...arr];
+document.getElementById("winner").innerHTML="";
+document.getElementById("total").innerHTML=resto.map((item, i)=>`<li>${item}</li>`);
 
-// }
+}
 
 
   
