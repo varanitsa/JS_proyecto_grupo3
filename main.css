@@ -1,9 +1,11 @@
 
 * {
 font-family: 'Mochiy Pop P One', sans-serif;
-color:darkblue; }
+color: #1e81b0; 
+}
 
 body {
+	margin: 0;
 background: -webkit-linear-gradient(top, #98d2ff 0%, rgb(217, 240, 255) 100%);
 background: -linear-gradient(top, #c9dbe9 0%, #fff 100%);
 background: -moz-linear-gradient(top, #c9dbe9 0%, #fff 100%);
@@ -12,64 +14,70 @@ background: -moz-linear-gradient(top, #c9dbe9 0%, #fff 100%);
 body h1,
 h2 {
     text-align: center;
+	
+}
+.content {
+	display: flex;
+	justify-content: space-between;
+}
+.centro {
+	padding: 0 3% 0 3%;
+}
+.izquierda {
+	padding: 0 3% 0 3%;
+}
+.derecha {
+	padding: 0 3% 0 3%;
 }
 
-.container{
-    font-family: 'Mochiy Pop P One', sans-serif;
-    position: absolute;
-    margin-top: 20%;
-	margin-bottom: 20%;
-    left: 50%;
-    transform: translateY(-50%) translateX(-50%);
-    width: fit-content;
-    display: grid;
-    grid-template-columns: 1fr auto auto;
-    padding: 1rem;
-  }
 
-  li{
-    list-style: none;
-    margin:0;
-    padding: 0;
-  }
-  .bird-image {
-}
 
-  #cont{
+
+  #winnerSection {
     margin: 1rem 0;
+	font-size: 50px;
+	color: #fff;
+	text-shadow: 0 0 0.2em #1e81b0, 0 0 0.2em #1e81b0;
     display: flex;
     justify-content: center;
     align-items: center;
 	height: 180px;
     width: 400px;
+	border-radius: 10px;
     background-color: #F7F9F9;
-    box-shadow: 10px 10px 10px rgb(0,0,0,0.4);
+    box-shadow: 10px 10px 10px rgb(0,0,0,0.2);
   }
 
     .card {
-	display: flex;
-	binueorder-radius: 10px;
+	column-count: 2;
+	box-shadow: 10px 10px 10px rgb(0,0,0,0.2);
+	width: 250px;
+	margin-bottom: 50px;
+	border-radius: 10px;
 	padding: 40px;
+	font-size: 20px;
+	line-height: 2;
+	background-color:rgb(217, 240, 255)
 	}
 
-    #resto {
-		display: none;
-        list-style: none;
-        line-height: 1.9;
-		column-count: 4;
-		column-width: auto;
-		}	
-	
-	#total {
-		list-style: none;
-		line-height: 1.9;
-		column-count: 4;
-		column-width: auto;
-		}
-	
 
-	button{
+#num-teams {
+	font-size: 20px;
+	color: #1e81b0;
+	width: 65%;
+	padding: 5px 0 5px 0;
+	margin-left: 5%;
+    align-items: center;
+	border-radius: 10px;
+    background-color: #F7F9F9;
+    box-shadow: 10px 10px 10px rgb(0,0,0,0.2);
+	border-style: none ;
+	text-align: center;
+}
+	
+	button, #generate{
 		border-radius: 17px;
+		margin-bottom: 15px;
 		color: white;
 		background-color: #0e9bfa;
 		padding: 0.5rem 1rem;
@@ -77,20 +85,20 @@ h2 {
 		transition: 0.3s all;
 		font-size: 20px;
 		font-family: 'Mochiy Pop P One', sans-serif;
+		width: 100%;
 	  }
-	  button:hover{
-		background-color: #a3daff;
+	   #generate:hover {
+		background-color: #fff;
+		transform: scale(1.05);
+		color: #0e9bfa;
+		}
+	  button:hover {
+		background-color: #fff;
 		transform: scale(1.05);
 		color: #0e9bfa;
 		}
 
-		#result{
-			font-size: 40px;
-			padding: 1rem;
-			display: flex;
-			flex-direction: column;
-			justify-content: space-around;
-		  }
+		  
 
 
 /*Time to finalise the cloud shape*/
@@ -199,4 +207,8 @@ h2 {
 @-o-keyframes moveclouds {
 	0% {margin-left: 1000px;}
 	100% {margin-left: -1000px;}
+}
+
+textarea {
+	display:none ;
 }
