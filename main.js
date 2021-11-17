@@ -1,87 +1,43 @@
 
-const arr = ["Anna Girona",
-    "Sonia",
-    "Desiree",
-    "Alisa",
-    "Alexia",
-    "Ana Casas",
-    "Candy",
-    "Yuliya",
-    "Carmen",
-    "Faby",
-    "Gabrielle",
-    "Gracia",
-    "Helen",
-    "Joana",
-    "Judith",
-    "Laura Campos",
-    "Laura Conteras",
-    "Marisa",
-    "Rosa",
-    "Sandra",
-    "Sara",
-    "Tamara",
-    "Valentina",
-    "Kristina"];
-      
- 
+$(document).ready(function() {
 
-function restoArray() {
-let resto = ["Anna Girona",
-    "Sonia",
-    "Desiree",
-    "Alisa",
-    "Alexia",
-    "Ana Casas",
-    "Candy",
-    "Yuliya",
-    "Carmen",
-    "Faby",
-    "Gabrielle",
-    "Gracia",
-    "Helen",
-    "Joana",
-    "Judith",
-    "Laura Campos",
-    "Laura Conteras",
-    "Marisa",
-    "Rosa",
-    "Sandra",
-    "Sara",
-    "Tamara",
-    "Valentina",
-    "Kristina"];
+    let coderArray = ["Alexia", "Alisa", "Ana C.", "Anna G.", "Candy", "Carmen", "Desirée", "Faby", "Gabrielle", "Gràcia", "Helen", "Joana", "Judith", "Kristina", "Laura C.", "Laura M.", "Marisa", "Rosa", "Sandra", "Sara", "Sonia", "Tamara", "Valentina", "Yuliya"];
+    let namesAlreadyPicked = [];
+
+    let buttonToChooseCoders = $('.buttonToChooseCoders');
+    let restartButton = $('.restartButton');
+    let winnerSection = $('.winnerSection');
+    let availableCoders = $('.availableCoders');
+
+    function showCoders() {
+        availableCoders.html(coderArray.map(coder => `<div>${coder}</div>`));
+        restartButton.hide();
+    }
+
+    showCoders();
+
+    function chooseCoder() {
+        let position = Math.floor(Math.random() * coderArray.length);
+        let winner = coderArray[position];
+        winnerSection.html(winner);
+        namesAlreadyPicked.push(winner);
+        coderArray.splice(position, 1);
+        showCoders();
+        if (coderArray.length === 0) {
+            restartButton.show();
+            buttonToChooseCoders.hide();
+            winnerSection.empty();            
+        }
+    }
+
+    function restart() {
+        coderArray = namesAlreadyPicked.sort();
+        namesAlreadyPicked = [];
+        showCoders();
+        buttonToChooseCoders.show();
+    }
     
-    resto.sort();
-    document.getElementById("resto").innerHTML = resto.join(" ");
-    restoArray();
-}
-
-
-let number = 0;
-document.addEventListener("DOMContentLoaded", function () {
-    document.getElementById("resto").innerHTML = arr.map((item, i) => restoArray());
+    buttonToChooseCoders.on("click", chooseCoder);
+    restartButton.on("click", restart);
 
 });
-
-const randomNumber = () => {
-    if (resto.length > 0) {
-        number = Math.floor(Math.random() * resto.length);
-
-        document.getElementById("winner").innerHTML = resto[number];
-        resto.splice(number, 1);
-        document.getElementById("total").innerHTML = resto.map((item, i) => restoArray());
-    } else {
-        resto = [...arr];
-    }
-}
-
-const resetEver = () =>{
-resto = [...arr];
-document.getElementById("winner").innerHTML="";
-document.getElementById("total").innerHTML=resto.map((item, i)=>`<li>${item}</li>`);
-
-}
-
-
-  

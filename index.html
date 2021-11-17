@@ -19,44 +19,43 @@
 </head>
 
 <body>
-    <main>
-        <div>
-            <h1><strong>Bienvenidos a FemTech</strong></h1>
-            <h2>¡Hoy es tu día de suerte!</h2>
-        </div>
-        <div class="backgroundclouds">
-            <div class="cloud x2"></div>
-            <div class="cloud x3"></div>
-            <div class="cloud x4"></div>
-            <div class="cloud x5"></div>
-        </div>
-       
 
-        <div class="images">
-            
+    <div>
+        <h1><strong>Bienvenidos a FemTech</strong></h1>
+        <h2>¡Hoy es tu día de suerte!</h2>
+    </div>
 
-            <div class="bird-image">
-                <img src="Recursos/paloma.gif"> </a>
-            </div>
-            <div class="card">
-                <ul id="total"></ul>
-                <ul id="resto"></ul>
+    <div class="images">
+
+
+        <div class="bird-image">
+            <img src="Recursos/paloma.gif"> </a>
+        </div>
+    </div>
+
+    <div class="backgroundclouds">
+        <div class="cloud x2"></div>
+        <div class="cloud x3"></div>
+        <div class="cloud x4"></div>
+        <div class="cloud x5"></div>
+    </div>
+
+
+    <div>
+        <button id="buttonToChooseCoders" class="buttonToChooseCoders">Haz Click Aquí</button>
+        <button id="restartButton" class="restartButton">Restart</button>
+
+        <h3>Es siguiente turno es para: </h3>
+        <section id="winnerSection" class="winnerSection"></section>
+
+        <h3>Estas personas aún pueden ser elegidas: </h3>
+       <div class="card">
+        <section id="availableCoders" class="availableCoders"></section>
+    </div>
     
-            </div>
+    </div>
 
-            <div class="container">
-               
-                <div id="result">
-                    <div id="cont">
-                        <p id="winner"></p>
-                    </div>
-                    <button onClick="randomNumber()">Haz click</button>
-                    <button onClick="resetEver()">Reset</button>
-                </div>
 
-            </div>
-        </div>
-    </main>
 </body>
 
 </html>
