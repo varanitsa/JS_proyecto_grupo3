@@ -1,6 +1,5 @@
-
-$(document).ready(function() {
-
+$(document).ready(function () {
+    
     let coderArray = ["Alexia", "Alisa", "Ana C.", "Anna G.", "Candy", "Carmen", "Desirée", "Faby", "Gabrielle", "Gràcia", "Helen", "Joana", "Judith", "Kristina", "Laura C.", "Laura M.", "Marisa", "Rosa", "Sandra", "Sara", "Sonia", "Tamara", "Valentina", "Yuliya"];
     let namesAlreadyPicked = [];
 
@@ -26,7 +25,7 @@ $(document).ready(function() {
         if (coderArray.length === 0) {
             restartButton.show();
             buttonToChooseCoders.hide();
-            winnerSection.empty();            
+            winnerSection.empty();
         }
     }
 
@@ -36,8 +35,12 @@ $(document).ready(function() {
         showCoders();
         buttonToChooseCoders.show();
     }
-    
+
     buttonToChooseCoders.on("click", chooseCoder);
     restartButton.on("click", restart);
+
+    $('#resetButton').on('click', function () {
+        location.reload();
+    })
 
 });
