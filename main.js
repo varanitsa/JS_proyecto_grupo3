@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    
+
     let coderArray = ["Alexia", "Alisa", "Ana C.", "Anna G.", "Candy", "Carmen", "Desirée", "Faby", "Gabrielle", "Gràcia", "Helen", "Joana", "Judith", "Kristina", "Laura C.", "Laura M.", "Marisa", "Rosa", "Sandra", "Sara", "Sonia", "Tamara", "Valentina", "Yuliya"];
     let namesAlreadyPicked = [];
 
@@ -46,33 +46,33 @@ $(document).ready(function () {
 });
 
 
-function generateTeams () {
+function generateTeams() {
     document.getElementById("teams").innerHTML = "";
     let players = document.getElementById("players").value
     players = players.split(/(\r\n|\r|\n)/)
     players = players.filter(player => /[a-z]/i.test(player))
-    const numTeams = Math.min(Number(document.getElementById("num-teams").value),players.length);
+    const numTeams = Math.min(Number(document.getElementById("num-teams").value), players.length);
     for (i = 0; i < numTeams; i++) {
-      const team = document.createElement("p")
-      team.innerHTML = `Grupo ${i +1}: `
-      teams.appendChild(team)
+        const team = document.createElement("p")
+        team.innerHTML = `Team ${i + 1}: `
+        teams.appendChild(team)
     }
     let curTeam = 0;
-    while (players.length>0) {
-      rndIndex = Math.floor(Math.random()*players.length)
-      const player = players.splice(rndIndex, 1);
-      const newTeam = document.getElementById("teams").getElementsByTagName("p")[curTeam]; 
-      let playerText = document.createTextNode(` ${player},`);
-      if (players.length < numTeams) {
-        playerText = document.createTextNode(` ${player}`)
-      }
-      newTeam.appendChild(playerText);
-      if (curTeam < numTeams-1) {
-        curTeam ++
-      } else {
-        curTeam = 0;
-      }
+    while (players.length > 0) {
+        rndIndex = Math.floor(Math.random() * players.length)
+        const player = players.splice(rndIndex, 1);
+        const newTeam = document.getElementById("teams").getElementsByTagName("p")[curTeam];
+        let playerText = document.createTextNode(` ${player},`);
+        if (players.length < numTeams) {
+            playerText = document.createTextNode(` ${player}`)
+        }
+        newTeam.appendChild(playerText);
+        if (curTeam < numTeams - 1) {
+            curTeam++
+        } else {
+            curTeam = 0;
+        }
     }
-  }
-  
-  
+}
+
+

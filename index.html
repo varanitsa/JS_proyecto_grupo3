@@ -1,126 +1,111 @@
 <!DOCTYPE html>
 <html>
 
-<head>
-    <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&family=Noto+Sans+Mono:wght@200;300;500;600;700;800;900&display=swap"
-        rel="stylesheet">
-
-    <title>Random Name Picker</title>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-    <script src='main.js'></script>
-
-</head>
-
-<body>
-
-    <div>
-        <h1><strong>Bienvenidos a FemTech</strong></h1>
-        <h2>¡Hoy es tu día de suerte!</h2>
-    </div>
-
-    <div class="images">
-
-
-        <div class="bird-image">
-            <img src="Recursos/paloma.gif"> </a>
+    <head>
+        <meta charset='utf-8'>
+        <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&family=Noto+Sans+Mono:wght@200;300;500;600;700;800;900&display=swap"
+            rel="stylesheet">
+    
+        <title>Random Name Picker</title>
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
+        <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+        <script src='main.js'></script>
+    
+    </head>
+    
+    <body>
+    
+        <div>
+            <h1><strong>Bienvenidos a FemTech</strong></h1>
+            <h2>¡Hoy es tu día de suerte!</h2>
         </div>
-    </div>
-
-    <div class="backgroundclouds">
-        <div class="cloud x2"></div>
-        <div class="cloud x3"></div>
-        <div class="cloud x4"></div>
-        <div class="cloud x5"></div>
-    </div>
-
-
-<div class="content">
-    <div class="izquierda">
-    <h3>Faltas tú : </h3>
-       <div class="card">
-            <section id="availableCoders" class="availableCoders"></section>
+    
+        <div class="images">
+    
+    
+            <div class="bird-image">
+                <img src="Recursos/paloma.gif"> </a>
+            </div>
         </div>
-    </div>
-
-    <div class="centro">
-        <h3>Es siguiente turno es para : </h3>
-        <section id="winnerSection" class="winnerSection"></section>
-        <button id="buttonToChooseCoders" class="buttonToChooseCoders">Haz Click Aquí</button>
-        <button id="restartButton" class="restartButton">Restart</button><br>
-        <button id="resetButton" class="resetButton">Reset</button>
+    
+        <div class="backgroundclouds">
+            <div class="cloud x2"></div>
+            <div class="cloud x3"></div>
+            <div class="cloud x4"></div>
+            <div class="cloud x5"></div>
+        </div>
+    
+    
+    <div class="content">
+        <div class="izquierda">
+        <h3>Faltas tú : </h3>
+           <div class="card">
+                <section id="availableCoders" class="availableCoders"></section>
+            </div>
+        </div>
+    
+        <div class="centro">
+            <h3>Es siguiente turno es para : </h3>
+            <section id="winnerSection" class="winnerSection"></section>
+            <button id="buttonToChooseCoders" class="buttonToChooseCoders">Haz Click Aquí</button>
+            <button id="restartButton" class="restartButton">Restart</button><br>
+            <button id="resetButton" class="resetButton">Reset</button>
+            
+        </div>
         
-    </div>
-    
-    <div class="derecha">
+        <div class="derecha">
 
-    <div>
-        <button id="buttonToChooseCoders" class="buttonToChooseCoders">Haz Click Aquí</button>
-        <button id="restartButton" class="restartButton">Restart</button>
-        <button id="resetButton" class="resetButton">Reset</button>
-
-
-        <h3>Es siguiente turno es para: </h3>
-        <section id="winnerSection" class="winnerSection"></section>
-
-        <h3>Estas personas aún pueden ser elegidas: </h3>
-       <div class="card">
-        <section id="availableCoders" class="availableCoders"></section>
-    </div>
-    
-    </div>
-    
-    <textarea id="players" cols="20" rows="10">
-        Alexia 
-        Alisa
-        Ana C.
-        Anna G
-        Candy
-        Carmen
-        Desirée
-        Faby
-        Gabrielle
-        Gràcia
-        Helen
-        Joana
-        Judith
-        Kristina
-        Laura C.
-        Laura M.
-        Marisa
-        Rosa
-        Sandra
-        Sara
-        Sonia
-        Tamara
-        Valentina
-        Yuliya
+        
+        <textarea id="players" cols="20" rows="10">
+            Alexia 
+            Alisa
+            Ana C.
+            Anna G
+            Candy
+            Carmen
+            Desirée
+            Faby
+            Gabrielle
+            Gràcia
+            Helen
+            Joana
+            Judith
+            Kristina
+            Laura C.
+            Laura M.
+            Marisa
+            Rosa
+            Sandra
+            Sara
+            Sonia
+            Tamara
+            Valentina
+            Yuliya
+             
+            </textarea>
+            
+            <h3>Grupos :
+            <input type="number" id="num-teams" value="2" min="2"> 
+              </input></h3> 
+              
+            <input id="generate" type = "submit" value = "Crear grupos" onclick="generateTeams()"></input>
+            
+            <div class="card">
+            <div id="teams">
+            </div>
+        </div>
          
-        </textarea>
-        
-        <h3>Grupos :
-        <input type="number" id="num-teams" value="2" min="2"> 
-          </input></h3> 
-          
-        <input id="generate" type = "submit" value = "Crear grupos" onclick="generateTeams()"></input>
-        
-        <div class="card">
-        <div id="teams">
+    
         </div>
     </div>
-     
-
-    </div>
-</div>
-        
-
-
-</body>
-
-</html>
+            
+    
+    
+    </body>
+    
+    </html>
