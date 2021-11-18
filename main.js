@@ -27,7 +27,7 @@ $(document).ready(function () {
             restartButton.show();
             buttonToChooseCoders.hide();
             winnerSection.empty();
-        }
+        } 
     }
   
     function restart() {

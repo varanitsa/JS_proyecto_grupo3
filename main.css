@@ -24,9 +24,6 @@ h2 {
 	padding: 0 3% 0 3%;
 }
 
-
-
-
 .izquierda {
 	padding: 0 3% 0 3%;
 }
@@ -226,3 +223,128 @@ height: 0;
 	100% {margin-left: -1000px;}
 }
 
+
+
+/* /responsive */
+
+@media (min-width: 320px) and (max-width: 400px) {
+.content {
+	display: flex;
+	flex-wrap: wrap;
+	
+}
+.backgroundclouds {
+	display: none;
+}
+.card {
+	column-count: 2;
+	font-size: 15px;
+	width: 275px;
+	padding: 15px;
+}	
+#winnerSection {
+	font-size: 40px;
+	width: 300px;
+	height: 140px;
+
+}
+#num-teams {
+	width: 100%;
+	margin-top: 20px;
+	margin-left: 0;
+}
+}
+
+@media (min-width: 401px) and (max-width: 767px) {
+	.content {
+		display: flex;
+		flex-wrap: wrap;
+		
+	}
+	.backgroundclouds {
+		display: none;
+	}
+	.card {
+		font-size: 15px;
+		width: 500px;
+		padding: 15px;
+	}	
+	#winnerSection {
+		font-size: 40px;
+		width: 500px;
+		height: 140px;
+	
+	}
+	#num-teams {
+		width: 100%;
+		margin-top: 20px;
+		margin-left: 0;
+	}
+}
+@media (min-width: 401px) and (max-width: 767px) {
+	.content {
+		display: flex;
+		flex-wrap: wrap;
+		
+	}
+	.backgroundclouds {
+		display: none;
+	}
+	.card {
+		font-size: 15px;
+		width: 500px;
+		padding: 15px;
+	}	
+	#winnerSection {
+		font-size: 40px;
+		width: 500px;
+		height: 140px;
+	
+	}
+	#num-teams {
+		width: 100%;
+		margin-top: 20px;
+		margin-left: 0;
+	}
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+	
+	.content {
+		display: flex;
+		flex-wrap: wrap;
+		
+	}
+	.bird-image{
+		margin-right: 30%;		
+	}
+	.backgroundclouds {
+		display: none;
+	}
+	.card {
+		font-size: 15px;
+		width: 500px;
+		padding: 15px;
+	}	
+	.title {
+		margin-left: 10%;
+		transform: none;
+	}
+	#winnerSection {
+		font-size: 40px;
+		width: 500px;
+		height: 140px;
+	
+	}
+	#num-teams {
+		width: 100%;
+		margin-top: 20px;
+		margin-left: 0;
+	}
+	@media (min-width: 1024px) and (max-width: 1366px) {
+		.content {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+		}
+}
+}
