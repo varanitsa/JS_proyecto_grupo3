@@ -11,6 +11,12 @@ background: -linear-gradient(top, #c9dbe9 0%, #fff 100%);
 background: -moz-linear-gradient(top, #c9dbe9 0%, #fff 100%);
 
 }
+#background { 
+	background-image: url("Recursos/navidad.png") ;
+	background-repeat: no-repeat;
+	background-size: auto;
+	}
+
 
 
 body h1,
@@ -24,6 +30,12 @@ h2 {
 }
 .centro {
 	padding: 0 3% 0 3%;
+}
+
+
+.box {
+	background-repeat: no-repeat ;
+	background-size: cover;
 }
 
 .izquierda {
