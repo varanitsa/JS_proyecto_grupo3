@@ -194,16 +194,3 @@ a{
     border:2px solid #F40009;
     text-decoration:none;
 }
-@media screen and (min-width: 451px) {
-  a{
-    font-size: 20px;
-     padding:8px 12px 8px 12px;
-  }
-}
-
-@media screen and (max-width: 450px) {
-  a{
-    font-size: 14px;
-     padding:5px 8px 5px 8px;
-  }
-}

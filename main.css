@@ -5,11 +5,13 @@ color: #1e81b0;
 }
 
 body {
-	margin: 0;
+margin: 0;
 background: -webkit-linear-gradient(top, #98d2ff 0%, rgb(217, 240, 255) 100%);
 background: -linear-gradient(top, #c9dbe9 0%, #fff 100%);
 background: -moz-linear-gradient(top, #c9dbe9 0%, #fff 100%);
+
 }
+
 
 body h1,
 h2 {
@@ -115,7 +117,6 @@ h2 {
 		textarea {
 			display:none ;
 		}
-
 
 
 /*Time to finalise the cloud shape*/
@@ -246,7 +247,9 @@ height: 0;
 		width: 275px;
 		padding: 15px;
 
+
 	}
+
 
 	#winnerSection {
 		font-size: 40px;
@@ -278,9 +281,8 @@ height: 0;
 			font-size: 15px;
 			width: 500px;
 			padding: 15px;
-
 		}
-
+		
 		#winnerSection {
 			font-size: 40px;
 			width: 500px;
@@ -320,12 +322,10 @@ height: 0;
 			margin-left: 10%;
 			transform: none;
 		}
-
 		#winnerSection {
 			font-size: 40px;
 			width: 500px;
 			height: 140px;
-
 		}
 		#num-teams {
 			width: 100%;

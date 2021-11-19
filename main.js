@@ -1,3 +1,4 @@
+
 function seleccionarCoder(listaDeCoders, position) {
     let elegida = listaDeCoders.splice(position,1)[0];
     
@@ -84,3 +85,5 @@ function generateTeams() {
         }
     }
 }
+
+
