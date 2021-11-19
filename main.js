@@ -12,6 +12,7 @@ $(document).ready(function () {
         restartButton.hide();
         
     }
+    
 
     showCoders();
 
