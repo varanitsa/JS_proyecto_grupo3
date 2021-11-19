@@ -18,7 +18,8 @@
     
     </head>
     
-    <body>
+    <body id="body">
+        <div class="background">
         <div class="title">
             <h1><strong>Bienvenidos a FemTech</strong></h1>
             <h2>¡Hoy es tu día de suerte!</h2>
@@ -60,7 +61,7 @@
         <div class="derecha">
 
         
-        <textarea id="players" cols="20" rows="10">
+            <textarea id="players" cols="20" rows="10">
             Alexia 
             Alisa
             Ana C.
@@ -95,16 +96,18 @@
             <input id="generate" type = "submit" value = "Crear grupos" onclick="generateTeams()"></input>
             
             <div class="card">
-            <div id="teams">
+                <div id="teams">
+                </div>
             </div>
-        </div>
          
-    
         </div>
     </div>
-    
-    
-    
+
+    <form> 
+        <input type="button" value="Azul" class="azul">
+        <input type="button" value="Blanco" class="blanco">
+    </form>  
+        </div>
     </body>
     
     </html>
