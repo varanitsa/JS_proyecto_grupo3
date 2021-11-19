@@ -1,3 +1,11 @@
+function seleccionarCoder(listaDeCoders, position) {
+    let elegida = listaDeCoders.splice(position,1)[0];
+    
+    return elegida;
+}
+
+
+
 $(document).ready(function () {
 
     let coderArray = ["Alexia", "Alisa", "Ana C.", "Anna G.", "Candy", "Carmen", "Desirée", "Faby", "Gabrielle", "Gràcia", "Helen", "Joana", "Judith", "Kristina", "Laura C.", "Laura M.", "Marisa", "Rosa", "Sandra", "Sara", "Sonia", "Tamara", "Valentina", "Yuliya"];
@@ -12,15 +20,15 @@ $(document).ready(function () {
         restartButton.hide();
         
     }
+    
 
     showCoders();
 
     function chooseCoder() {
         let position = Math.floor(Math.random() * coderArray.length);
-        let winner = coderArray[position];
-        winnerSection.html(winner);
+        let winner = seleccionarCoder( coderArray, position);
+        winnerSection.html(winner);  
         namesAlreadyPicked.push(winner);
-        coderArray.splice(position, 1);
         
         showCoders();
         if (coderArray.length === 0) {
@@ -45,6 +53,8 @@ $(document).ready(function () {
     })
  
 })
+
+
 
 function generateTeams() {
     document.getElementById("teams").innerHTML = "";
@@ -74,5 +84,3 @@ function generateTeams() {
         }
     }
 }
-
-
